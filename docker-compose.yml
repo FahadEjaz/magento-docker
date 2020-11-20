@@ -21,7 +21,7 @@ services:
       - ssldata:/etc/nginx/certs
 
   phpfpm:
-    image: markoshust/magento-php:7.4-fpm-2
+    image: markoshust/magento-php:7.3-fpm-2
     links:
       - db
     volumes: *appvolumes
