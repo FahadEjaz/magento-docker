@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 # Using Instructions
-Clone the repo, switch to required magento branch  and clone or more project i src
+Clone the repo, switch to required magento branch  and clone or move project in src
 forlder in current directory. If fresh magento installation is required create auth.json file with magento credentials in ~/.composer/ folder and run below command to download the magento in src folder.
 
 ```sh
