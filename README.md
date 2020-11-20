@@ -11,7 +11,7 @@ bin/download 2.3.5
 where 2.3.5 could be any version but you should be in compatable branch to make it work properly.
 In src folder rename nginx.conf.sample to nginx.conf.
 Configure database environment params in  env/db.env file.
-Append app host doamain name 
+Append app host domain name in name resolver file using below command
 
 ```sh
 echo "127.0.0.1 ::1 $DOMAIN" | sudo tee -a /etc/hosts
