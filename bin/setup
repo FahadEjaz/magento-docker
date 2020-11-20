@@ -36,11 +36,6 @@ bin/clinotty bin/magento setup:install \
   --language=en_US \
   --currency=USD \
   --timezone=America/New_York \
-  --amqp-host=rabbitmq \
-  --amqp-port=5672 \
-  --amqp-user=guest \
-  --amqp-password=guest \
-  --amqp-virtualhost=/ \
   --cache-backend=redis \
   --cache-backend-redis-server=redis \
   --cache-backend-redis-db=0 \
@@ -51,8 +46,6 @@ bin/clinotty bin/magento setup:install \
   --session-save-redis-host=redis \
   --session-save-redis-log-level=4 \
   --session-save-redis-db=2 \
-  --search-engine=elasticsearch7 \
-  --elasticsearch-host=elasticsearch \
   --use-rewrites=1
 
 echo "Turning on developer mode.."
@@ -63,7 +56,7 @@ bin/clinotty bin/magento indexer:reindex
 echo "Forcing deploy of static content to speed up initial requests..."
 bin/clinotty bin/magento setup:static-content:deploy -f
 
-echo "Re-indexing with Elasticsearch..."
+echo "Re-indexing with .."
 bin/clinotty bin/magento indexer:reindex
 
 echo "Clearing the cache to apply updates..."
