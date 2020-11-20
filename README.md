@@ -26,6 +26,11 @@ Now launch the docker environment
 ```sh
 docker-compose up
 ```
+
+If you want to switch enivronment you first need to pull down current running environemnt.
+```sh
+docker-compose down
+```
 # Contribution Instructions
 Checkout from main branch with the branch name along with magento version you required. (i.e magento-scandiwebpwa=2.3.5). Make necessary changes in docker files to meet the technology stack requirements. Push you branch.
 
